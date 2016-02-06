@@ -1,0 +1,90 @@
+ img.round{
+	border-radius: 100px;
+	border: 2px solid orange;
+	padding:4px;
+	float: left;
+	width:110px;
+	margin-bottom:20px;
+	}
+	a{
+	border:none;
+	}
+h1{
+	text-transform:uppercase;
+	margin-top:25px;
+	color:black;
+	text-align:center;
+	font-size:45px;
+	font-family:impact;
+	letter-spacing:3px;
+	}
+h2{
+	font-family:arial;
+	color:black;
+	font-weight:black;
+	text-transform:uppercase;
+	}
+h4{
+	font-family:arial;
+	color:black;
+	font-weight:black;
+	text-transform:uppercase;
+	}
+p{
+	text-align:left;
+	line-height:1em;
+	margin-bottom:0.5em;
+	}
+p.work{
+	font-family:arial;
+	font-weight: bold;
+	color:black;
+	font-size:14px;
+	text-transform:uppercase;
+	}
+hr{
+	width:750px;
+	margin-bottom:10px;
+	color: gray;
+	}
+p.head{
+	margin-top:20px;
+	text-align:center;
+	}
+body {
+	font-family:Calibri;
+	border-top: 10px solid orange;
+	width:800px;
+	margin:auto;
+	color:dimgray;
+	}
+.top {
+	margin-top:20px;
+	}
+.contright{
+	border-left: 1px solid orange; /* Линия слева от текста */
+    margin-left: 10px; /* Расстояние от левого края до линии */
+	padding-left:15px;
+	width:55%;
+	padding:15px;
+	float:right;
+	}
+.contleft{
+	width:30%;
+	padding:15px;
+	}
+	ul {
+    list-style: none;
+	}
+
+ul li:before {
+    content:  "-";
+    position: relative;
+    left:     -3px;
+	}
+#lang{
+	margin-bottom:100px;
+}
+#cours{
+	margin-bottom:100px;
+}
