@@ -1,13 +1,13 @@
-<?php
-$age = 16;
+﻿<?php
+$age = 'gvghv';
 
 if($age >= 18 && $age <= 59){
 	echo 'Вам еще работать и работать';
-}elseif ($age > 59){
+}elseif ($age >= 60){
 	echo 'Вам пора на пенсию';
-}elseif($age <= 17){
+}elseif($age <= 17 && $age >= 0){
 	echo 'Вам еще рано работать';
-}elseif($age ){
+}else{
 	echo 'Неизвестный возраст';
 }
 
