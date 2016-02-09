@@ -1,13 +1,14 @@
 ﻿<?php
-$age = 'gvghv';
+$age = 'asd';
 
 if($age >= 18 && $age <= 59){
 	echo 'Вам еще работать и работать';
-}elseif ($age >= 60){
+}elseif ($age > 59){
 	echo 'Вам пора на пенсию';
-}elseif($age <= 17 && $age >= 0){
+}elseif($age <= 17 && $age > 0){
 	echo 'Вам еще рано работать';
-}else{
+}elseif($age <= 0 || !is_numeric($age)){
 	echo 'Неизвестный возраст';
 }
 
+//var_dump($age < 0 || !(is_numeric($age)));
