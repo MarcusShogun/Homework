@@ -1,0 +1,34 @@
+﻿<?PHP
+function getContent(){
+	if (is_readable("messages.db")){
+	$f = file_get_contents("messages.db");
+	$messages = unserialize($f);
+	return $messages;
+    }
+}
+function addContetn($messages){
+	if (isset($_POST['submit'])){
+	$newPost['userName'] = htmlspecialchars($_POST['userName']);// htmlspecialchars заменяет теги
+	$newPost['userMessage'] = htmlspecialchars($_POST['userMessage']);
+	$messages[] = $newPost;
+	$messagesDB = serialize($messages);
+	file_put_contents("messages.db", $messagesDB);
+    }
+return $messages;
+}
+function showContent($messages){
+	if (isset($messages)){
+	$messages = array_reverse($messages);// Переворачивает массив, новый комент на верху (применим к индексным массивам)
+	$cens = ["bad", "worst", "ugly"];
+	foreach($messages as $post){
+		foreach ($cens as $word){
+			$post["userName"] = str_replace($word, 'CENSORED',$post["userName"]);
+			$post["userMessage"] = str_ireplace($word, 'CENSORED',$post["userMessage"]);
+			// str_replace регистро зависима,str_ireplace регистро не зависима.
+		}
+		echo "<p>Пользователь {$post["userName"]} пишет:</p>";
+	    echo "<p>{$post["userMessage"]}</p>";
+	}
+    }
+}
+?>

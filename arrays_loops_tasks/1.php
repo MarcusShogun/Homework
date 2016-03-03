@@ -1,6 +1,7 @@
-<?php
-$myArray = array('html', 'css', 'php', 'js', 'jq');
-foreach($myArray as $my){
-	echo "{$my} <br>";
+﻿<?php
+
+$arr = ['html', 'css', 'php', 'js', 'jq'];
+
+foreach($arr as $ar){
+	echo "{$ar} <br>";
 }
-?>

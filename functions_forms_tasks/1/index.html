@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Задание №1</title>
+</head>
+<body>
+<form method = "POST" action = "index.html">
+    <label id="words1">Массив слов №1</label>
+    <textarea name="words1" rows="3" cols="15" placeholder="...здесь..."></textarea>
+    <br /><br />
+    <label id="words2">Массив слов №2</label>
+    <textarea name="words2" rows="3" cols="15" placeholder="...здесь..."></textarea>
+    <br /><br />
+    <input type="submit" name="submit" value="Отправить">
+</form>
+</body>
+</html>
+
+
+<?PHP
+if (isset ($_POST['submit'])){
+    $newPost['words1'] = htmlspecialchars($_POST['words1']);
+	$newPost['words2'] = htmlspecialchars($_POST['words2']);
+	$messages[] = $newPost;
+	foreach ($newPost as $words){
+
+	}
+}
+?>

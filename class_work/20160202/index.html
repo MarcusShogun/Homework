@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Мой сайт</title>
+		<meta charset="UTF-8">
+		<style>
+		.myform{
+		margin:auto;
+		width:700px;
+		
+		}
+		</style>
+	</head>
+<body>
+<div class="myform">
+<form method="GET" action="action.php" enctype="multipart/form-data">
+	<fieldset>
+	<legend>Пользовательские данные</legend>
+	<p>Введите своё имя...</p>
+	<input type="text" name="userName">
+	<p>Введите свою почту</p>
+	<input type="email" name="userMail" required>
+	<p>Введите свой пароль...</p>
+	<input type="password" name="userPass">
+	</fieldset>
+	<p>Выберите тип доставки</p>
+	<input type="radio" name="dostavka" value="kurier"><p>Курьерская</p>
+	<input type="radio" name="dostavka" value="mail"><p>По почте</p>
+	<label for="DVD">Выбираю DVD</label>
+	<input id ="DVD" type="checkbox" name="variant" checked value="DVD">
+	<label for="CD">Выбираю CD</label>
+	<input id="CD" type="checkbox" name="variant" value="CD">
+	<br>
+	<input type="submit" name="submit" value="Отправить">
+	<br>
+	<select name="course" size="2" multiple>
+		<option>HTML</option>
+		<option>JS</option>
+		<option>PHP</option>
+		<option>MySQL</option>
+	</select>
+	<br>
+	<datalist id="browsers">
+		<option value="IE">
+		<option value="Chrome">
+		<option value="Mozilla">
+		<option value="Safari">
+	</datalist>
+	<input type="month">
+	<input type="date">
+	<input type="color">
+	<br>
+	<input type="range" min="0" max="100" value="30">
+	<br>
+	<input type="number" min="0" max="100" value="30">
+	<input type="file" name="f">
+	<br>
+	<input type="text" name ="item" list="browsers">
+	<br>
+	<input type="reset">
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	
+</form>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

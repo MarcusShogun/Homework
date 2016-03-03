@@ -1,6 +1,6 @@
 ﻿<?PHP
 $age = 20;
-$zp = '1000 UAH';
+$zp = 1000;
 $pr = 300;
 if((is_numeric($zp)) && (is_numeric($pr))){
 $tax_zp = 0.3;
